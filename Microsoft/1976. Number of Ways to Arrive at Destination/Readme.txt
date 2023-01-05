@@ -25,6 +25,7 @@ Constraints:
 1 <= n <= 200
 n - 1 <= roads.length <= n * (n - 1) / 2
 roads[i].length == 30 <= ui, vi <= n - 11 <= time
-i <= 109ui != vi
+i <= 109
+ui != vi
 There is at most one road connecting any two intersections.
 You can reach any intersection from any other intersection.
