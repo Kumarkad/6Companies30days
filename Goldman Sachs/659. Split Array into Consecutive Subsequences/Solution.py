@@ -4,7 +4,7 @@ class Solution:
 
         left = Counter(nums)
 
-        end = Counter() 
+        right= Counter() 
 
         for i in nums: 
 
@@ -12,11 +12,11 @@ class Solution:
 
             left[i] -= 1
 
-            if end[i - 1] > 0: 
+            if right[i - 1] > 0: 
 
-                end[i - 1] -= 1 
+                right[i - 1] -= 1 
 
-                end[i] += 1 
+                right[i] += 1 
 
             elif left[i + 1] and left[i + 2]: 
 
@@ -24,7 +24,7 @@ class Solution:
 
                 left[i + 2] -= 1 
 
-                end[i + 2] += 1
+                right[i + 2] += 1
 
             else: 
 
